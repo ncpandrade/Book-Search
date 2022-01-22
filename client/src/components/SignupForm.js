@@ -20,6 +20,7 @@ const SignupForm = () => {
     event.preventDefault();
 
       try {
+        console.log(userFormData);
         const { data } = await addUser({
           variables: { ...userFormData}
         });
